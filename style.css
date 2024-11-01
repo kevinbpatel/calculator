@@ -1,0 +1,112 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator { 
+    width: 300px;
+    height: 500px;
+    background-color: #c2b187;
+    display: flex; 
+    flex-direction: column; 
+}
+
+.control-panel {
+    margin: 50px 10px 10px 10px; /* Adds margins */
+    background-color: black;
+    flex-grow: 1; /* Allows the panel to grow and fill the remaining space */
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.display {
+    width: 100%;
+    height: 15%;
+    background-color: #3a0716;
+    border-radius: 10px;
+    align-self: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.display-text { 
+    color: red;
+    margin-right: 20px;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.blocker { 
+    width: 100%;
+    height: 15%;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.button-container {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.row-1, .row-2, .row-3, .row-4, .row-5 { 
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.num-0, .num-1, .num-2, .num-3, .num-4, .num-5, .num-6, .num-7, .num-8, .num-9,
+.ce, .divide, .multiply, .minus, .plus, .decimal, .equals, .clear, .empty {
+    background-color: #c2b187;
+    border: none;
+    
+    font-size: 1.2rem;
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 1;
+    vertical-align: middle;
+
+    font-family: system-ui;
+    font-weight: 700;
+
+    
+}
+.num-0, .num-1, .num-2, .num-3, .num-4, .num-5, .num-6, .num-7, .num-8, .num-9, 
+.decimal{
+    background-color: #f5fffe;
+    
+}
+
+.num-0 { 
+    flex-grow: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.equals { 
+    flex-grow: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: orange;
+}
+
+.empty { 
+    background-color: rgb(48, 48, 48);
+}
+
